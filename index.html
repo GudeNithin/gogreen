@@ -55,6 +55,7 @@
                         <i class="ri-menu-line"></i>
                     </div>
                 </div>
+
             </nav>
         </header>
 
@@ -302,6 +303,35 @@
                 </div>
             </section>
 
+            <!-- Add a cart section-->
+            <section class="cart section" id="cart">
+                <h2 class="section__title-center">
+                    Your Cart
+                </h2>
+
+                <div class="cart__container container">
+                    <div class="cart__items" id="cart-items">
+                        Cart items will be displayed here -->
+                    </div>
+                    <div class="cart__total">
+                        Total: <span id="cart-total">0</span> Rs
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proceed to Payment Button -->
+            <button id="proceedToPaymentBtn" class="button">Proceed to Payment</button>
+
+            <!-- Container for Total Amount -->
+            <div id="totalAmountContainer" class="total-amount-container">
+                <!-- Total amount will be displayed here -->
+            </div>
+
+            <!-- Container for Transaction Success Message -->
+            <div id="successMessageContainer" class="success-message-container">
+                <!-- Transaction success message and image will be displayed here -->
+            </div>
+
             <!--==================== QUESTIONS ====================-->
             <section class="questions section" id="faqs">
                 <h2 class="section__title-center questions__title container">
@@ -544,5 +574,11 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--Cart JS-->
+        <script src="assets/js/cart.js"></script>
+
+        <!--Button Events-->
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
