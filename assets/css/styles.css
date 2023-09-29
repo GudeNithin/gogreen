@@ -1,6 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem; /*56px*/
@@ -1061,4 +1060,46 @@ the website, in dark theme
   .scrollup{
     right: 3rem;
   }
+
 }
+.cart{
+  text-align: center;
+}
+
+.button-class{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button{
+  margin:10px;
+}
+
+.thanking-customers-section {
+  background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.thanking-customers-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.thanking-customers-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.thanking-customers-section-img {
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+  color: #d0b200;
+  font-weight: 800;
+}
+
