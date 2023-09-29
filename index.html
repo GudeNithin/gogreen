@@ -12,13 +12,8 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
 
-        <title>Responsive plants website - Bedimcode</title>
+        <title>Responsive plants website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -44,9 +39,6 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contact Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#cart" class="nav__link">My Cart</a>
                         </li>
                     </ul>
 
@@ -316,50 +308,31 @@
                 <h2 class="section__title-center">
                     Your Cart
                 </h2>
-        
+
                 <div class="cart__container container">
                     <div class="cart__items" id="cart-items">
-                        Cart items will be displayed here
+                        Cart items will be displayed here -->
                     </div>
                     <div class="cart__total">
                         Total: <span id="cart-total">0</span> Rs
                     </div>
                 </div>
             </section>
-        
+
             <!-- Proceed to Payment Button -->
-            
-            
-            <div class="text-center">
-                <button type="button" class="button custom-button" data-toggle="modal" data-target="#exampleModal">
-                    Proceed to Payment
-                </button>
-    
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
-                                    Your Order is Successfull
-                                </h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Display your image here -->
-                                <img src="assets/img/paymentSuccess.png" alt="" class="product__img">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="button-class">
+                <button id="proceedToPaymentBtn" class="button">Proceed to Payment</button>
+        </div>
+                <!-- Container for Total Amount -->
+        <div class="button-class">
+                <div id="totalAmountContainer" class="total-amount-container">
+                    <!-- Total amount will be displayed here -->
                 </div>
-    
+        </div>
+
+            <!-- Container for Transaction Success Message -->
+            <div id="successMessageContainer" class="success-message-container">
+                <!-- Transaction success message and image will be displayed here -->
             </div>
 
             <!--==================== QUESTIONS ====================-->
