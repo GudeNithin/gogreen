@@ -10,16 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach a click event listener to the "Proceed to Payment" button
     proceedButton.addEventListener("click", function () {
         // Display the total amount alert
-        alert(`Total Amount: $${totalAmount}`);
-
-        // Display the transaction success message with an image
-        successMessageContainer.innerHTML = `
-            <p>Transaction Successful</p>
-            <img src="success-image.png" alt="Transaction Successful">
-        `;
-
+        alert(`Confirm Your Payment`);
+    
         // Optionally, you can hide the button and total amount container
         proceedButton.style.display = "none";
         totalAmountContainer.style.display = "none";
+    
+        // Call the buttonClick function to set the background image
+        buttonClick();
     });
+
+function buttonClick(){
+    document.getElementById("successMessageContainer").style.backgroundImage='url("C:\Users\chand\Desktop\Mini Project\responsive-plants-website-main\assets\img\paymentSuccess.png")';
+}
 });
