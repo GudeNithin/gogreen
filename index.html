@@ -311,7 +311,7 @@
 
                 <div class="cart__container container">
                     <div class="cart__items" id="cart-items">
-                        Cart items will be displayed here -->
+                        Cart items will be displayed here
                     </div>
                     <div class="cart__total">
                         Total: <span id="cart-total">0</span> Rs
@@ -319,16 +319,33 @@
                 </div>
             </section>
 
+            <div class="card">
+                <div class="popup" id="popup">
+                    <img src="assets/img/scanner.jpg">
+                    <h2>Hey Uesr!</h2>
+                    <p>Your order is ready.
+              Scan To Pay</p>
+                    <button type="button" onclick="closepopup()">OK</button>
+                </div>
+
             <!-- Proceed to Payment Button -->
-        <div class="button-class">
-                <button id="proceedToPaymentBtn" class="button">Proceed to Payment</button>
-        </div>
-                <!-- Container for Total Amount -->
         <div class="button-class">
                 <div id="totalAmountContainer" class="total-amount-container">
                     <!-- Total amount will be displayed here -->
                 </div>
         </div>
+
+        <!-- Proceed to Payment Button -->
+        <button id="proceedToPaymentBtn" class="button button-class" type="submit" onclick="openpopup()">Proceed to Payment</button>
+        <script>
+            let popup=document.getElementById("popup");
+            function openpopup(){
+                popup.classList.add("open-popup");
+            }
+            function closepopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
 
             <!-- Container for Transaction Success Message -->
             <div id="successMessageContainer" class="success-message-container">
